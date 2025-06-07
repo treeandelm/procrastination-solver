@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拖延症任务拆解器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#0071e3"/>
+                    <path d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="#0071e3"/>
+                    <path d="M12 7C10.9 7 10 7.9 10 9H12C12 8.9 12.1 8.8 12.2 8.8C12.3 8.8 12.4 8.9 12.4 9C12.4 9.1 12.3 9.2 12.2 9.2H11.5C11.2 9.2 11 9.4 11 9.7V13H13V11H13.5C14.3 11 15 10.3 15 9.5C15 8.1 13.7 7 12 7Z" fill="#0071e3"/>
+                </svg>
+            </div>
+            <h1>拖延症任务拆解器</h1>
+            <p class="subtitle">基于福格行为模型，帮助你克服拖延症</p>
+        </header>
+        
+        <div class="step-indicator">
+            <div class="step-text">第 <span id="current-step">1</span> 步 / <span id="total-steps">4</span></div>
+            <div class="step-progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        
+        <main class="content-area" id="content-area">
+            <!-- 主要内容区域 -->
+            <div class="step-content active" id="step-1">
+                <h2>你在拖延什么任务？</h2>
+                <p>请详细描述一下你正在拖延的任务</p>
+                <div class="form-group">
+                    <textarea id="task-input" class="input-field textarea" placeholder="例如：完成工作报告、学习新技能..."></textarea>
+                </div>
+                <div class="hint">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>描述越详细，我们提供的行动方案就越具体</span>
+                </div>
+            </div>
+        </main>
+        
+        <div class="navigation">
+            <button id="next-btn" class="btn">下一步 <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        
+        <footer>
+            <p>AI驱动的任务拆解 · 基于福格行为模型设计</p>
+        </footer>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
